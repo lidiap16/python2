@@ -1,43 +1,103 @@
 #function worksheet
 #lidia
 
-def username():
+# def username():
+#     name = input("enter name:")
+#     print("farewell", name)
+#     
+# username()
+# 
+# #task2
+# 
+# def price(Price, Quantity):
+#     total = Price * Quantity
+#     print("your total is", total)
+# inputPrice = float(input("enter price:"))
+# inputQuantity = int(input("enter quantity:"))
+# price(inputPrice, inputQuantity)
+#                 
+#             
+# #task3
+# def calculate_area(num):
+#     area = 3.14 * num * num
+#     return area
+# result = calculate_area(5)
+# print("the area is", result)
+# 
+# #task4
+# def calrectangle(lenght, width):
+#     
+#     area = lenght * width
+#     perimeter = lenght * 2 + width * 2
+#     return area, perimeter
+# #width =(5)
+# lenght = int(input("enter lenght:"))
+# width = int(input("enter width:"))
+# #lenght =(2)
+# area, perimeter = calrectangle(lenght, width)
+# print("area is", area, "perimeter", perimeter)
+# 
+# #task5
+# 
+# def valid_temp(temp):
+#     if temp < -50 or temp > 50:
+#         return False
+#     else:
+#         return True
+# temp = 25
+# if valid_temp(temp):
+#     print("the temp is valid,", temp, "degrees")
+# else:
+#     print("the temp is not valid,", temp, "degrees")
+#     
+#
+#task 1
+#05/02/2025
+
+def name():
     name = input("enter name:")
-    print("farewell", name)
-    
-username()
+    print("hello", name)
+name()
 
 #task2
+def ave(grade1, grade2):
+    average = (grade1 + grade2) / 2
+    return average
+grade1 = 3
+grade2 = 5
+average = ave(grade1, grade2)
+print(average)
 
-def price(Price, Quantity):
-    total = Price * Quantity
-    print("your total is", total)
-inputPrice = float(input("enter price:"))
-inputQuantity = int(input("enter quantity:"))
-price(inputPrice, inputQuantity)
-                
-            
 #task3
-def calculate_area(num):
-    area = 3.14 * num * num
-    return area
-result = calculate_area(5)
-print("the area is", result)
+def classave(grades):
+    classaverage = sum(grades) / 10
+    return classaverage
+grades = (12, 90, 56, 78, 58, 98, 67, 87, 98, 87)
+classaverage = classave(grades)
+print(classaverage)
 
 #task4
-def calrectangle(lenght, width):
+def validgrade(grade):
+    if grade < 100 and grade > 0:
+        return True
+    else:
+        return False
+grade = 198   
+if validgrade(grade):
+    print("valid")
+else:
+    print("invalid")
+
+#task5
     
-    area = lenght * width
-    perimeter = lenght * 2 + width * 2
-    return area, perimeter
-#width =(5)
-lenght = int(input("enter lenght:"))
-width = int(input("enter width:"))
-#lenght =(2)
-area, perimeter = calrectangle(lenght, width)
-print("area is", area, "perimetera", perimeter)
+grades = [67, 67, 78, 98, 87, 78, 78, 98, 90]
+def gradescal():
+    grade = int(input("enter grade:"))
+    if grade < 100 and grade > 0:
+        grades.append(grade)
+    else:
+        print("invalid")
+        
 
-#task5
-
-
-#task5
+gradescal()
+print(grades)
