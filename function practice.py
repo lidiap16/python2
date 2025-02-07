@@ -1,5 +1,7 @@
 #function worksheet
 #lidia
+#function worksheet
+#lidia
 
 # def username():
 #     name = input("enter name:")
@@ -76,18 +78,18 @@
 # classaverage = classave(grades)
 # print(classaverage)
 # 
-# #task4
+#task4
 # def validgrade(grade):
 #     if grade < 100 and grade > 0:
 #         return True
 #     else:
 #         return False
-# grade = 198   
+# grade = 98   
 # if validgrade(grade):
 #     print("valid")
 # else:
 #     print("invalid")
-# 
+
 # #task5
 #     
 # grades = [67, 67, 78, 98, 87, 78, 78, 98, 90]
@@ -125,17 +127,26 @@
 # print(grades)
 
 #task10
-def count_pass(grades):
-    return sum(1 for grade in grades if grade >= 50)
+# def count_pass(grades):
+#     return sum(1 for grade in grades if grade >= 50)
+# 
+# def graderep(highest, lowest, ave):
+#     highest = max(grades)
+#     lowest = min(grades)
+#     ave = sum(grades) / len(grades)
+#     passing = count_pass(grades)
+#     
+#     print(highest)
+#     print(lowest)
+#     print(ave)
+#     print(passing)
+#grade_list = [85, 92, 47, 76, 50, 89, 33, 100, 67, 45, 76]
+# graderep(highest, lowest, ave)
+#
 
-def graderep(grades):
-    highest = max(grades)
-    lowest = min(grades)
-    ave = sum(grades) / len(grades)
-    passing = count_pass(grades)
-print(highest)
-print(lowest)
-print(ave)
-print(passing)
-grade_list = [85, 92, 47, 76, 50, 89, 33, 100, 67, 45]
-graderap(grades)
+#task11
+def medgrade(grade_list):
+    grade_list.sort()
+    print(grade_list)
+grade_list = [85, 92, 47, 76, 50, 89, 33, 100, 67, 45, 76]
+medgrade(grade_list)
